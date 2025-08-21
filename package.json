@@ -1,0 +1,32 @@
+{
+  "name": "tecnicas-programcao-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "ts-node src/CapitalizaNomes.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carlosedsmagalhaes/tecnicas-programcao-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/carlosedsmagalhaes/tecnicas-programcao-2/issues"
+  },
+  "homepage": "https://github.com/carlosedsmagalhaes/tecnicas-programcao-2#readme",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "csv-parse": "^6.1.0",
+    "csv-stringify": "^6.6.0"
+  }
+}
