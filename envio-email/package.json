@@ -1,0 +1,25 @@
+{
+  "name": "envio-email",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node ./src/ExtractDataCSV",
+    "format": "ts-node ./src/FormatHTML",
+    "discount": "ts-node ./src/CalculateDiscount",
+    "nextMonth": "ts-node ./src/NextMonthFull"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "csv-parse": "^6.1.0",
+    "csv-stringify": "^6.6.0",
+    "fs": "^0.0.1-security"
+  }
+}
