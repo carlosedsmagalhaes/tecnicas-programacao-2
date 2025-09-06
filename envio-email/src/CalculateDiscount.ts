@@ -11,8 +11,8 @@ export default calculateDiscount;
 
 
 
-const dataNasc:Date = new Date('2003-09-10')
+/* const dataNasc:Date = new Date('2003-09-10')
 const discount = calculateDiscount(dataNasc);
-console.log(discount);
+console.log(discount); */
 
 

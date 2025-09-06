@@ -1,6 +1,7 @@
 import fs from "fs";
 import { parse } from "csv-parse";
 import { stringify } from "csv-stringify";
+import parseDate from "./ParseDate";
 
 const arquivo: string = "./docs/emails.csv";
 const readCSV = (arquivo: string): Promise<Object[]> => {
@@ -11,7 +12,7 @@ const readCSV = (arquivo: string): Promise<Object[]> => {
       .pipe(parse({ delimiter: ";", columns: (header: string[]) =>
     header.map((col) => col.replace(/^\uFEFF/, "").trim().toLowerCase()), skip_empty_lines: true }))
       .on("data", (row) => {    
-        dados.push({nome: row.nome, email: row.email, data_nasc: row.nasc,});
+        dados.push({nome: row.nome, email: row.email, data_nasc: parseDate(row.nasc),});
       })
       .on("end", () => {
         resolve(dados);
@@ -23,7 +24,9 @@ const readCSV = (arquivo: string): Promise<Object[]> => {
 };
 
 
-(async () => {
+export default readCSV;
+
+/* (async () => {
   try {
     let dados = await readCSV(arquivo);    
     console.log(dados)
@@ -32,7 +35,7 @@ const readCSV = (arquivo: string): Promise<Object[]> => {
     console.error("Erro:", err);
   }
 })();
-
+ */
 
 
 

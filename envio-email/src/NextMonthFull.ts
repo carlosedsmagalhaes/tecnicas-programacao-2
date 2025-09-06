@@ -12,6 +12,6 @@ const nextMonthFull = (dataNasc: Date):string => {
 export default nextMonthFull;
 
 
-/* const dataNasc:Date = new Date('2003-11-10')
+/* const dataNasc:Date = new Date('2003-09-10')
 const discount = nextMonthFull(dataNasc);
 console.log(discount); */

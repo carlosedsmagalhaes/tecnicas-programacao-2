@@ -1,13 +1,8 @@
 import fs from "fs";
 import calculateDiscount from "./CalculateDiscount";
 import nextMonthFull from "./NextMonthFull";
+import Dado from "../interfaces/IDados";
 
-interface Dado {
-  nome:string;
-  email:string;
-  data_nasc:Date;
-  arquivoHTML:string
-}
 
 const formatHTML = async (dados: Dado[]): Promise<Dado[]> => {
   const caminho = "./docs/Mensagem.html";
@@ -19,7 +14,7 @@ const formatHTML = async (dados: Dado[]): Promise<Dado[]> => {
   dados.forEach((e) => {
     itemHtml = htmlString.replace("{{nome}}", e.nome);
     itemHtml = itemHtml.replace("{{percdesc}}", calculateDiscount(e.data_nasc).toString());
-    itemHtml = itemHtml.replace("{{mesquevem}}", nextMonthFull(e.data_nasc).toString());1
+    itemHtml = itemHtml.replace("{{mesquevem}}", nextMonthFull(e.data_nasc).toString());
     dadosComHtml.push({ ...e, arquivoHTML: itemHtml });
   });
 
