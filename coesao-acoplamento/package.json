@@ -1,0 +1,26 @@
+{
+  "name": "coesao-acoplamento",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "index": "ts-node ./src/index",
+    "ex01": "ts-node ./src/ex01",
+    "ex02": "ts-node ./src/ex02",
+    "ex03": "ts-node ./src/ex03",
+    "ex04": "ts-node ./src/ex04",
+    "ex05": "ts-node ./src/ex05",
+    "teste": "ts-node ./src/teste",
+    "teste1": "ts-node ./src/teste1",
+    "teste2": "ts-node ./src/teste2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
