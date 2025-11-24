@@ -1,0 +1,51 @@
+curl -X POST http://localhost:3000/professor -H "Content-Type: application/json" -d"{\"nome\": \"Henrique Louro\", \"email\": \"henrique.louro@fatec.sp.gov.br\", \"cpf\":\"07494812857\"}"
+
+curl -X POST http://localhost:3000/professor -H "Content-Type: application/json" -d"{\"nome\": \"Henrique Louro\", \"email\": \"henrique.louro@fatec.sp.gov.br\", \"cpf\":\"07494812857\"}"
+
+curl -X POST http://localhost:3000/professor -H "Content-Type: application/json" -d"{\"nome\": \"Henrique Louro\", \"email\": \"henrique.louro@fatec.sp.gov.br\", \"cpf\":\"07494812857\"}"
+
+curl -X POST http://localhost:3000/professor -H "Content-Type: application/json" -d"{\"nome\": \"Henrique Louro\", \"email\": \"henrique.louro@fatec.sp.gov.br\", \"cpf\":\"07494812857\"}"
+
+curl -X POST http://localhost:3000/professor -H "Content-Type: application/json" -d"{\"nome\": \"Henrique Louro\", \"email\": \"henrique.louro@fatec.sp.gov.br\", \"cpf\":\"07494812857\"}"
+
+curl -X POST http://localhost:3000/professor -H "Content-Type: application/json" -d"{\"nome\": \"Henrique Louro\", \"email\": \"henrique.louro@fa
+
+curl -X POST http://localhost:3001/professor -H "Content-Type: application/json" -d"{\"nome\": \"Henrique Louro\", \"email\": \"henrique.louro@fatec.sp.gov.br\", \"cpf\":\"07494812857\"}"
+
+curl -X POST http://localhost:3001/professor -H "Content-Type: application/json" -d"{\"nome\": \"Carlos Silva\", \"email\": \"carlos.silva@fatec.sp.gov.br\", \"cpf\": \" 63479695051\"}"
+
+curl -X POST http://localhost:3001/professor -H "Content-Type: application/json" -d"{\"nome\": \"Odete Roitman\", \"email\": \"odete.roitman@fatec.sp.gov.br\", \"cpf\": \"32082128016\"}"
+
+curl -X POST http://localhost:3000/professor -H "Content-Type: application/json" -d"{\"nome\": \"Henrique Louro\", \"email\": \"henrique.louro@fatec.sp.gov.br\", \"cpf\":\"07494812857\"}"
+
+curl -X POST http://localhost:3000/professor -H "Content-Type: application/json" -d"{\"nome\": \"Henrique Louro\", \"email\": \"henrique.louro@fatec\", \"cpf\": \"12345678910\"}"
+
+curl -X POST http://localhost:3001/professor -H "Content-Type: application/json" -d"{\"nome\": \"Henrique Louro\", \"email\": \"henrique.louro@fatec\", \"cpf\": \"12345678910\"}"
+
+curl -X GET http://localhost:3001/professor
+
+curl -X PUT http://localhost:3001/professor -H "Content-Type: application/json" -d"{\"id\":\"682f669ff4bd0fb518a18a2e\",\"nome\": \"Odetinha Roitman\", \"email\":\"odetinha.roitman@fatec.sp.gov.br\", \"cpf\": \" 32082128016\"}"
+
+curl -X PUT http://localhost:3001/professor -H "Content-Type: application/json" -d"{\"id\":\"6924e6e19d45901a4184d02e\",\"nome\": \"Odetinha Roitman\", \"email\":\"odetinha.roitman@fatec.sp.gov.br\", \"cpf\": \" 32082128016\"}"
+
+curl -X DELETE http://localhost:3001/professor -H "Content-Type: application/json" -d"{\"id\":\"6924e6e19d45901a4184d02e\"}"
+
+curl -X GET http://localhost:3001/professor
+
+curl -X POST http://localhost:3001/disciplina -H "Content-Type: application/json" -d"{\"descricao\": \"Técnicas de Programação II\"}"
+
+curl -X GET http://localhost:3001/disciplina
+
+curl -X GET http://localhost:3001/professor
+
+curl -X POST http://localhost:3000/professor_has_disciplina -H "Content-Type:application/json" -d "{\"professor\": \"6924e6a69d45901a4184d02a\", \"disciplina\":\"6924e6a69d45901a4184d02a\"}"
+
+curl -X POST http://localhost:3001/professor_has_disciplina -H "Content-Type:application/json" -d "{\"professor\": \"6924e6a69d45901a4184d02a\", \"disciplina\":\"6924e6a69d45901a4184d02a\"}"
+
+curl -X POST http://localhost:3001/professor_has_disciplina -H "Content-Type:application/json" -d "{\"professor\": \"6924e6a69d45901a4184d02a\", \"disciplina\":\"6924e7f59d45901a4184d03a\"}"
+
+curl -X GET http://localhost:3001/professor
+
+curl -X POST http://localhost:3001/professor_has_disciplina -H "Content-Type:application/json" -d "{\"professor\": \"6924e6be9d45901a4184d02c\", \"disciplina\":\"6924e7f59d45901a4184d03a\"}"
+
+curl -X GET http://localhost:3001/professor_has_disciplina
